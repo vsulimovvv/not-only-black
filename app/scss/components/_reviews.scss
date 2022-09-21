@@ -1,0 +1,135 @@
+.reviews {
+  padding-top: 30px;
+  background-color: #f9f9f9;
+  @include adaptive-value('padding-bottom', 85, 50, 1);
+
+  .container {
+    &--p-0 {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    @include fz35();
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    height: 630px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+
+    .swiper-pagination {
+      &-bullet {
+        opacity: 1;
+        width: 5px;
+        height: 5px;
+        background-color: #2a2a2a;
+        border: 1px solid #000000;
+
+        &-active {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  &__slides {
+    height: 300px;
+  }
+
+  &__block {
+    position: absolute;
+    width: 260px;
+    height: 490px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    @include backgroundImage(url('../images/mockup.png'), contain);
+
+    &::after,
+    &::before {
+      @include elDef();
+      width: 8px;
+      height: 400px;
+      background-color: var(--color-white);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      right: 12px;
+    }
+
+    &::before {
+      left: 12px;
+    }
+
+    .swiper-button-next {
+      right: -50px;
+
+      @include breakpointsMaxW($bp-768) {
+        right: -40px;
+      }
+    }
+
+    .swiper-button-prev {
+      left: -50px;
+
+      @include breakpointsMaxW($bp-768) {
+        left: -40px;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: var(--color-white);
+
+      &::after {
+        background-color: var(--color-dark);
+      }
+    }
+  }
+
+  &__slide {
+    max-width: 160px;
+    height: 300px;
+    transition: 400ms ease;
+    position: relative;
+    box-sizing: border-box;
+
+    img {
+      @include img(cover);
+    }
+
+    &::after {
+      @include elDef();
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(250, 207, 35, 0.5);
+      transition: 300ms ease;
+    }
+
+    &.swiper-slide-active {
+      transform: scale(1.38, 1.25);
+      z-index: 3;
+
+      &::after {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include adaptive-value('margin-top', 50, 30, 1);
+  }
+}

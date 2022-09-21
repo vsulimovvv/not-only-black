@@ -15,6 +15,14 @@
     display: grid;
     grid-template-columns: 260px 1fr;
     gap: 100px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 50px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__heading {
@@ -32,11 +40,12 @@
     padding-left: 50px;
     position: relative;
     width: 100%;
+    max-width: 270px;
 
     &-wrap {
       display: flex;
+      justify-content: flex-start;
       gap: 10px;
-      justify-content: space-between;
     }
 
     &:not(:last-child) {
@@ -96,5 +105,8 @@
     &:not(:last-child) {
       margin-right: 20px;
     }
+  }
+
+  &__form {
   }
 }

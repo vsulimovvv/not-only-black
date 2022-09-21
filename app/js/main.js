@@ -1,4 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
+  // * Nice Select
+  $('select').niceSelect();
+
   // * ====+ sliders
   (function collectionSlider() {
     const swiper3 = new Swiper('.collections__slider', {
@@ -66,6 +69,25 @@ window.addEventListener('DOMContentLoaded', () => {
           clickable: true,
         },
       });
+    });
+  })();
+
+  (function reviewsSlider() {
+    const swiper3 = new Swiper('.reviews__slider', {
+      spaceBetween: 20,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      initialSlide: 2,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.reviews__slider .swiper-button-next',
+        prevEl: '.reviews__slider .swiper-button-prev',
+      },
     });
   })();
 

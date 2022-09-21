@@ -97,6 +97,7 @@ body {
   color: var(--color-white);
   transition: 300ms ease, transform 0s;
   text-align: center;
+  border-radius: 5px;
 
   &:hover {
     background-color: rgba(239, 239, 239, 0.99);
@@ -142,4 +143,8 @@ body {
     height: 60%;
     object-fit: contain;
   }
+}
+
+.select {
+  width: 100%;
 }

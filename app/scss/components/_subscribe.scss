@@ -1,6 +1,7 @@
 .subscribe {
   text-align: center;
   color: var(--color-title);
+  @include adaptive-value("padding-top", 50, 40, 1);
   @include adaptive-value("padding-bottom", 80, 50, 1);
 
   &__wrapper {
