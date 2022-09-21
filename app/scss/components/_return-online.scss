@@ -1,0 +1,27 @@
+.return-online {
+  font-weight: 300;
+  line-height: 1.6;
+  @include adaptive-value('padding-bottom', 100, 60, 1);
+
+  &__title {
+    margin-bottom: 7px;
+    font-weight: 400;
+    @include adaptive-value('font-size', 25, 22, 1);
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    a {
+      font-weight: 600;
+      border-bottom: 1px solid transparent;
+      transition: 200ms ease;
+
+      &:hover {
+        border-bottom-color: var(--color-dark);
+      }
+    }
+  }
+}

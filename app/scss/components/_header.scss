@@ -1,0 +1,253 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  z-index: 10;
+  transition: 200ms ease;
+
+  &.scroll-header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+    .header__bottom,
+    .header__top {
+      display: none;
+    }
+  }
+
+  &__toggle {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 200ms ease-in;
+    position: relative;
+    border-radius: 3px;
+    display: none;
+
+    @include breakpointsMaxW($bp-991) {
+      display: flex;
+    }
+
+    &-line {
+      border-radius: 3px;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-black);
+      position: relative;
+      transition: 200ms ease-in;
+
+      &::after,
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background-color: inherit;
+        transition: 200ms ease-in;
+        border-radius: 3px;
+      }
+
+      &::after {
+        top: -8px;
+      }
+
+      &::before {
+        bottom: -8px;
+      }
+    }
+  }
+
+  &__top {
+    padding: 12px 0;
+    background-color: #ededed;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    color: #9d9999;
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__address {
+    padding-left: 20px;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      width: 14px;
+      height: 14px;
+      top: 40%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: #c1c1c1;
+      @include maskImage(url('../images/location.svg'), contain);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+
+    @include breakpointsMaxW($bp-991) {
+      padding: 15px 0;
+    }
+  }
+
+  &__menu {
+    flex: 1;
+  }
+
+  &__tools {
+    flex: 1;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ededed;
+
+    .header-tools__list {
+      justify-content: flex-end;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 130px;
+    margin-bottom: 10px;
+
+    @include breakpointsMaxW($bp-991) {
+      width: auto;
+    }
+
+    img {
+      width: 90%;
+      margin: 0 auto;
+
+      @include breakpointsMaxW($bp-991) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 20px 0;
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+  }
+
+  .header-phones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.5;
+
+    &__link {
+      padding-left: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      a {
+        transition: 200ms ease;
+        text-align: right;
+        margin-left: 10px;
+
+        &:hover {
+          color: var(--color-black);
+        }
+      }
+
+      &::after {
+        @include elDef();
+        width: 10px;
+        height: 10px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #c1c1c1;
+      }
+
+      &--phone {
+        &::after {
+          @include maskImage(url('../images/phone.svg'), contain);
+        }
+      }
+
+      &--whatsapp {
+        &::after {
+          @include maskImage(url('../images/whatsapp.svg'), contain);
+        }
+      }
+    }
+  }
+}
+
+.header-tools {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--cart {
+      padding: 0;
+    }
+
+    &-count {
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      background-color: #282828;
+      border: 2px solid var(--color-white);
+      border-radius: 50%;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 400;
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: -4px;
+      right: -4px;
+    }
+  }
+}

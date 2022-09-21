@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Not Only Black</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main mt">
+        @include('./components/_hero.html')
+        @include('./components/_brands.html')
+        @include('./components/_products-grid.html')
+        @include('./components/_products-slider.html')
+        @include('./components/_banners.html')
+        @include('./components/_products-slider-news.html')
+        @include('./components/_collections.html')
+        @include('./components/_subscribe.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

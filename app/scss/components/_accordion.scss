@@ -1,0 +1,40 @@
+.accordion {
+  padding-left: 1px;
+
+  &.active {
+    .accordion-control {
+      &::after {
+        content: "-";
+      }
+    }
+  }
+
+  &-control {
+    cursor: pointer;
+    transition: 150ms ease;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "+";
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 30px;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-dark);
+      transition: 250ms ease;
+    }
+  }
+
+  &-content {
+    max-height: 0;
+    overflow: hidden;
+    z-index: 9;
+    transition: 400ms ease;
+  }
+}

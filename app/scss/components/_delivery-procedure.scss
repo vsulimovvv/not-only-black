@@ -1,0 +1,31 @@
+.delivery-procedure {
+  font-weight: 300;
+  @include adaptive-value('margin-bottom', 50, 40, 1);
+
+  &__title {
+    margin-bottom: 7px;
+    font-weight: 400;
+    @include adaptive-value('font-size', 25, 22, 1);
+  }
+
+  &__list {
+    counter-reset: item;
+  }
+
+  &__item {
+    padding-left: 16px;
+    position: relative;
+
+    &:not(:last-child) {
+      @include adaptive-value('margin-bottom', 22, 15, 1);
+    }
+
+    &::before {
+      position: absolute;
+      counter-increment: item;
+      content: counter(item) '.';
+      left: 0;
+      top: 0;
+    }
+  }
+}

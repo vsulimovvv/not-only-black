@@ -1,0 +1,29 @@
+.brands {
+  @include adaptive-value("padding-top", 55, 30, 1);
+  @include adaptive-value("padding-bottom", 55, 30, 1);
+
+  &__slider {
+  }
+
+  &__slide {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      opacity: 0.25;
+      transition: 400ms ease;
+      
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    img {
+      max-width: 112px;
+      max-height: 25px;
+      object-fit: contain;
+    }
+  }
+}

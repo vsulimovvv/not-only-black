@@ -1,0 +1,37 @@
+.collections {
+  @include adaptive-value("padding-top", 80, 50, 1);
+  @include adaptive-value("padding-bottom", 80, 50, 1);
+
+  &__title {
+    text-align: center;
+    @include fz35();
+    @include adaptive-value("margin-bottom", 60, 40, 1);
+  }
+
+  &__slider {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 50%;
+
+      &.swiper-button-disabled {
+        opacity: 1;
+      }
+    }
+
+    .swiper-button-next {
+      right: 0;
+    }
+
+    .swiper-button-prev {
+      left: 0;
+    }
+  }
+
+  &__slide {
+    box-sizing: border-box;
+    max-width: 395px;
+    @include adaptive-value("max-width", 395, 300, 1);
+  }
+}

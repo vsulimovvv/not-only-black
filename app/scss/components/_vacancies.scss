@@ -1,0 +1,117 @@
+.vacancies {
+  padding-top: 30px;
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__top {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    @include adaptive-value('margin-bottom', 100, 50, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include fz35();
+
+    @include breakpointsMaxW($bp-991) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__offer {
+    max-width: 445px;
+    width: 100%;
+  }
+
+  &__text {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include adaptive-value('font-size', 19, 16, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      height: auto;
+    }
+  }
+
+  &__preview {
+    max-width: 750px;
+    width: 100%;
+    @include adaptive-value('height', 490, 200, 1);
+
+    img {
+      @include img(cover);
+    }
+  }
+
+  &__inner {
+    display: grid;
+    @include adaptive-value('gap', 75, 40, 1);
+  }
+
+  .vacancies-item {
+    display: grid;
+    grid-template-columns: 275px auto;
+    gap: 100px;
+
+    @include breakpointsMaxW($bp-991) {
+      gap: 30px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    &__left {
+      line-height: 1.35;
+      font-weight: 500;
+      color: #272525;
+      @include adaptive-value('font-size', 30, 20, 1);
+
+      span {
+        display: block;
+
+        @include breakpointsMaxW($bp-768) {
+          display: inline;
+        }
+      }
+    }
+
+    &__list {
+      line-height: 2;
+      font-weight: 300;
+      color: #272525;
+      @include adaptive-value('font-size', 20, 15, 1);
+    }
+
+    &__link {
+      transition: 200ms ease;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-color: var(--color-dark);
+      }
+    }
+
+    &__btn {
+      border-radius: 5px;
+      font-size: 17px;
+      margin-top: 15px;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      @include breakpointsMaxW($bp-768) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.exchange-cost {
+  font-weight: 300;
+  line-height: 2;
+  @include adaptive-value('margin-bottom', 35, 25, 1);
+
+  &__title {
+    margin-bottom: 7px;
+    font-weight: 400;
+    @include adaptive-value('font-size', 25, 22, 1);
+  }
+
+  p {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+  }
+}

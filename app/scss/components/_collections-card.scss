@@ -1,0 +1,18 @@
+.collections-card {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  transition: 500ms ease;
+  @include adaptive-value("height", 400, 300, 1);
+  @include background(cover);
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &__brand {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}

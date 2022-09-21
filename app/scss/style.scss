@@ -1,0 +1,42 @@
+// базовые подключения
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'global';
+
+// Components
+@import './components/header';
+@import './components/footer';
+@import './components/menu-mobile';
+@import './components/menu';
+@import './components/swiper-options';
+@import './components/accordion';
+@import './components/socials';
+@import './components/pagination';
+@import './components/popups';
+@import './components/hero';
+@import './components/animation';
+// * ====
+@import './components/collections';
+@import './components/collections-card';
+@import './components/subscribe';
+@import './components/banners';
+@import './components/products-slider';
+@import './components/product-card';
+@import './components/products-grid';
+@import './components/brands';
+@import './components/loyalty-card';
+@import './components/discount-scale';
+@import './components/guarantees';
+@import './components/delivery';
+@import './components/how-order';
+@import './components/delivery-terms';
+@import './components/exchange-cost';
+@import './components/delivery-procedure';
+@import './components/return-online';
+@import './components/delivery-cost';
+@import './components/about';
+@import './components/requisites';
+@import './components/vacancies';
+@import './components/contacts';

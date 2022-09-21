@@ -1,0 +1,43 @@
+.how-order {
+  font-weight: 300;
+  @include adaptive-value('padding-bottom', 60, 40, 1);
+
+  &__title {
+    margin-bottom: 7px;
+    font-weight: 400;
+    @include adaptive-value('font-size', 25, 22, 1);
+  }
+
+  &__top {
+    @include adaptive-value('margin-bottom', 25, 15, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include adaptive-value('gap', 30, 15, 1);
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .order-item {
+    font-weight: 300;
+    background-color: #f5f5f5;
+    height: 100%;
+    @include adaptive-value('padding-top', 35, 20, 1);
+    @include adaptive-value('padding-bottom', 40, 20, 1);
+    @include adaptive-value('padding-right', 35, 20, 1);
+    @include adaptive-value('padding-left', 35, 20, 1);
+
+    &__name {
+      line-height: 1.3;
+      font-weight: 400;
+      color: #3c3c3c;
+      display: block;
+      margin-bottom: 5px;
+      @include adaptive-value('font-size', 25, 20, 1);
+    }
+  }
+}

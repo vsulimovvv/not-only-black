@@ -1,0 +1,44 @@
+.guarantees {
+  padding-top: 30px;
+  font-weight: 300;
+  line-height: 2;
+  @include adaptive-value('padding-bottom', 120, 70, 1);
+
+  &__title {
+    margin-bottom: 30px;
+    @include fz35();
+  }
+
+  &__name {
+    @include adaptive-value('font-size', 20, 16, 1);
+    line-height: 1.4;
+    font-weight: 400;
+    color: #3c3c3c;
+    margin-bottom: 15px;
+  }
+
+  &__top {
+    margin-bottom: 20px;
+  }
+
+  &__quality {
+    margin-top: 13px;
+    @include adaptive-value('margin-bottom', 37, 20, 1);
+  }
+
+  &__thanks {
+    line-height: 1.3;
+    font-weight: 600;
+    @include adaptive-value('font-size', 24, 20, 1);
+  }
+
+  a {
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: 250ms ease;
+
+    &:hover {
+      border-color: var(--color-dark);
+    }
+  }
+}

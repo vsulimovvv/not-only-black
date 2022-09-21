@@ -1,0 +1,25 @@
+// Color
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-text: #282828;
+  --color-dark: #1a1a1a;
+  --color-gray: #797979;
+  --color-title: #3c3c3c;
+  --color-accent: #d7c2b5;
+  --color-red: #b95151;
+}
+
+// * breakpointsMaxW
+$bp-fullPage: 1950px;
+$bp-container: 1270px;
+$bp-991: 991.98px;
+$bp-768: 767.98px;
+$bp-576: 576px;
+$bp-360: 359.98px;
+
+// *=== Fonts
+$TTCommons: "TT Commons";
+$Oswald: "Oswald";
+$BookmanOldStyle: "Bookman Old Style";

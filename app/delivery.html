@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link
+  rel="shortcut icon"
+  href="images/content/header/logo-mobile.png"
+  type="image/x-icon"
+/>
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+
+    <title>Not Only Black</title>
+  </head>
+
+  <body>
+    
+
+<!-- <div class="popup popup--projects">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 6L18 18"
+          stroke="#0F0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M18 6L6 18"
+          stroke="#0F0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__title">Обратный звонок</div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="service-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="service-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="service-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="service-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="images/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#0F0F0F"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#0F0F0F"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">О программе</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Проекты</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Обучение</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Полезные материалы</a>
+      </li>
+    </ul>
+
+    <a class="mobile-menu__signin btn" href="#">Войти</a>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__address">ТЦ Триумфальный, 3 этаж</div>
+        <div class="header-phones">
+          <div class="header-phones__link header-phones__link--phone">
+            <span>Телефон:</span><a href="#">+7 915 213-76-61</a>
+          </div>
+          <div class="header-phones__link header-phones__link--whatsapp">
+            <span>WhatsApp:</span><a href="#"> +7 915 213-76-61</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="header__inner">
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link active" href="#">Женское</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Мужское</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">New</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--sale" href="#"
+              >Sale
+
+              <span>-70%</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="header__logo logo" href="#">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+
+      <div class="header__tools header-tools">
+        <ul class="header-tools__list">
+          <li class="header-tools__item">
+            <a class="header-tools__link" href="#">
+              <svg>
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-tools__item">
+            <a class="header-tools__link" href="#">
+              <svg>
+                <use xlink:href="images/sprite.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-tools__item">
+            <a class="header-tools__link" href="#">
+              <svg>
+                <use xlink:href="images/sprite.svg#heart-border"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-tools__item">
+            <a class="header-tools__link header-tools__link--cart" href="#">
+              <svg>
+                <use xlink:href="images/sprite.svg#cart"></use>
+              </svg>
+
+              <span class="header-tools__link-count"> 0 </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+    </nav>
+
+    <div class="header__bottom">
+      <div class="menu-header">
+        <ul class="menu-header__list">
+          <li class="menu-header__item">
+            <a class="menu-header__link" href="#">Обувь</a>
+          </li>
+          <li class="menu-header__item">
+            <a class="menu-header__link" href="#">Одежда</a>
+          </li>
+          <li class="menu-header__item">
+            <a class="menu-header__link" href="#">Сумки</a>
+          </li>
+          <li class="menu-header__item">
+            <a class="menu-header__link" href="#">Аксессуары</a>
+          </li>
+          <li class="menu-header__item">
+            <a class="menu-header__link" href="#">Бренды</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main mt">
+        <section class="delivery">
+  <div class="container">
+    <div class="delivery__top">
+      <h1 class="delivery__title">Доставка и оплата</h1>
+
+      <p class="delivery__text">Способ оплаты зависит от способа доставки:</p>
+    </div>
+
+    <ul class="delivery__list">
+      <li class="delivery-item">
+        <span class="delivery-item__heading"
+          >При доставке в регионы России</span
+        >
+        <ol class="delivery-item__list">
+          <li class="delivery-item__item">
+            <span class="delivery-item__name">Переводом на счет магазина.</span>
+            <p class="delivery-item__text">
+              Реквизиты прилагаются в ответном письме после подтверждения выбора
+              способа оплаты.
+            </p>
+          </li>
+          <li class="delivery-item__item">
+            <span class="delivery-item__name">Другое</span>
+            <p class="delivery-item__text">
+              Вы сможете уточнить по звонке по телефону: +7915213-76-61 или
+              написав, позвонив в What’s app:+79852241587
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li class="delivery-item">
+        <span class="delivery-item__heading"
+          >При доставке c примеркой по Москве и МО 20 км</span
+        >
+        <ol class="delivery-item__list">
+          <li class="delivery-item__item">
+            <span class="delivery-item__name">Наличными курьеру.</span>
+            <p class="delivery-item__text">
+              Оплатите заказ наличными нашему курьеру, при получении заказа.
+            </p>
+          </li>
+          <li class="delivery-item__item">
+            <span class="delivery-item__name">Банковской картой курьеру</span>
+            <p class="delivery-item__text">
+              Стоимость данной услуги составляет +3% к цене товара.
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li class="delivery-item delivery-item--self-delivery">
+        <span class="delivery-item__heading">При самовывозе</span>
+        <p class="delivery-item__text">
+          В Notonlyblack доступна услуга "Бронь товара на 24 часа на складе
+          магазина" бесплатно) из магазина N.O.Black (Mосква Вавилова 66, ТЦ
+          Триумфальный 3 этаж)
+        </p>
+        <ol class="delivery-item__list">
+          <li class="delivery-item__item">Наличными продавцу.</li>
+          <li class="delivery-item__item">
+            Банковской картой, мы принимаем все карты действующие в РФ карты.
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="how-order">
+  <div class="container">
+    <div class="how-order__top">
+      <h2 class="how-order__title">Как оформить заказ</h2>
+      <p class="how-order__text">Оформить заказ можно 2 способами:</p>
+    </div>
+
+    <ul class="how-order__list">
+      <li class="order-item">
+        <span class="order-item__name"> На сайте магазина </span>
+        <p class="order-item__text">
+          нажав на кнопку «в корзину». В «Вашей корзине», расположенной в
+          верхнем правом углу шапки, отобразится количество заказанных вещей и
+          общая сумма заказа. Кликнув по корзине, Вы попадаете в бланк заказа,
+          где и завершаете его оформление.
+        </p>
+      </li>
+
+      <li class="order-item">
+        <span class="order-item__name">Позвонив по телефону</span>
+        <p class="order-item__text">
+          +7 915 213 76 61 в будни с 11.00 до 20-45 по московскому времени. По
+          заказам, оформленным через сайт, мы с Вами свяжемся в течение 24
+          часов. Если этого не произошло, значит, либо контактные данные указан
+          с ошибкой, либо произошел сбой на почтовом сервере. В таком случае, мы
+          просим Вас повторно связаться с нами и повторить свой заказ или
+          вопрос.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="delivery-terms">
+  <div class="container">
+    <h2 class="delivery-terms__title">Условия и способы доставки</h2>
+
+    <div class="delivery-terms__top">
+      <p>
+        Доставка в регионы России осущеcтвляется почтой РФ или компанией СДЭК.
+      </p>
+      <p>
+        Cтоимость доставки не входит в цену товара, определяется размером и
+        объемом товара и предварительно оговаривается с покупателем, обычно не
+        превышает 400-1000 рублей.
+      </p>
+      <p>
+        Доставка осуществляется до адреса который клиент указывает при заказе
+        почтой РФ все товары отправляются с полной страховкой товара, любо по
+        выбору клиента.
+      </p>
+    </div>
+
+    <p class="delivery-terms__name">
+      В настоящий момент доступна услуга "Доставка c примеркой" :
+    </p>
+
+    <ul>
+      <li>• По Москве в пределах МКАД при сумме покупки от 10 950 руб.</li>
+      <li>• МО 20 км от MKAD при сумме покупки от 17 950 рублей,</li>
+    </ul>
+
+    <p>
+      Для Вашего удобства любой товар может быть забронирован покупателем и
+      выкуплен непосредственно из магазина в Москве, после примерки в любое
+      удобное для Вас время с 11.00 до 20.45 ежедневно по адресу Вавилова 66 ТЦ
+      Триумфальный 3 этаж бутик N.O.Black.
+    </p>
+
+    <p>
+      Так же Вы можете оплатить стоимость товара в размере 100% и мы отправим
+      Вам его в ближайший рабочий день службой СДЭК или почтой РФ.
+    </p>
+  </div>
+</section>
+
+        <section class="delivery-cost">
+  <div class="container">
+    <h2 class="delivery-cost__title">Стоимость доставки</h2>
+
+    <div class="delivery-cost__top">
+      <p>
+        В нашем магазине возможна услуга "Доставка с примеркой" для одного
+        заказа до 3-х пар обуви +3-х единиц одежды.
+      </p>
+      <p>За доставку каждой последующей пары обуви или вещи доплата 50 руб.</p>
+    </div>
+
+    <div class="delivery-cost__box">
+      <p>
+        <b>Для Вашего удобства</b> доставку осуществляют продавцы консультанты,
+        которые могут дать Вам всю дополнительную информацию от товаре и при
+        необходимости помочь сделать правильный выбор:
+      </p>
+      <ul class="delivery-cost__list">
+        <li class="delivery-cost__item">• по Москве в пределах МКАД.</li>
+        <li class="delivery-cost__item">
+          • от 550 до 750 руб в зависимости от адреса доставки c 10.00 до 19.00
+          на следующий день после заказа или по договоренности до 3-х пар
+          обуви+3-х единиц вещей.
+        </li>
+      </ul>
+    </div>
+    <div class="delivery-cost__box">
+      <p>
+        Доставка каждой последующей пары обуви стоит +50 руб и оговаривается
+        отдельно.
+      </p>
+      <ul class="delivery-cost__list">
+        <li class="delivery-cost__item">• 750 руб за пределы MKAD.</li>
+        <li class="delivery-cost__item">
+          • 1250 руб 1) cрочная доставка, 2) срочная доставка за пределы MKAD,
+          3) после 21.00 независимо от дня недели и приобретения товара.
+        </li>
+        <li class="delivery-cost__item">
+          • Услуга "Доставка с примеркой" не оплачивается по Москве при ПОКУПУКЕ
+          одного или нескольких единиц товара на общую сумму от 20900 Руб.
+        </li>
+      </ul>
+    </div>
+    <div class="delivery-cost__bottom">
+      <p>
+        Обратите внимание услуга "Срочная доставка c примеркой" и доставка после
+        19.00 по запросу покупателя оплачивается независимо от того выкуплен
+        товар или нет.
+      </p>
+      <p>
+        В 14-дневный срок после покупки покупатель имеет право на
+        немотивированный обмен/возврат товара надлежащего качества при условии
+        сохранения товарного вида, ярлыков и фирменной упаковки.
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section class="exchange-cost">
+  <div class="container">
+    <h2 class="exchange-cost__title">Стоимость обмена товара:</h2>
+
+    <p>По Москве курьером</p>
+    <ul class="exchange-cost__list">
+      <li class="exchange-cost__item">
+        • с 10.00 до 19.00 550 -750 руб взависимости от адреса.
+      </li>
+      <li class="exchange-cost__item">• c 19.00 до 23.00 1250 руб.</li>
+    </ul>
+    <p>Сроки и время доставки: 1-3 дня после подтверждения заказ.</p>
+  </div>
+</section>
+
+        <section class="delivery-procedure">
+  <div class="container">
+    <h2 class="delivery-procedure__title">Процедура доставки:</h2>
+    <ol class="delivery-procedure__list">
+      <li class="delivery-procedure__item">
+        Перед выездом наш ответственный за доставку товара связывается по
+        телефону с покупателем и получает подтверждение времени и места
+        доставки.
+      </li>
+      <li class="delivery-procedure__item">
+        Если клиент в течение 15-30 минут не выходит на связь, то доставка
+        отменяется или переносится, а бронь на заказанный товар аннулируется.
+      </li>
+      <li class="delivery-procedure__item">
+        Возможность вторичного заказа обсуждается в индивидуальном порядке,
+        после того как покупатель подтвердит заказ вторично.
+      </li>
+      <li class="delivery-procedure__item">
+        Примерка обуви осуществляется в присутствии продавца.
+      </li>
+    </ol>
+  </div>
+</section>
+
+        <section class="return-online">
+  <div class="container">
+    <h2 class="return-online__title">
+      Возврат товара при покупке в интернет магазине:
+    </h2>
+
+    <div class="return-online__text">
+      <p>
+        Онлайн-торговля определяется законом как дистанционный способ продажи
+        товара и регулируется статьей 26.1 Закона о правах потребителей.
+      </p>
+      <p>
+        Процедура возврата товара в интернет-магазин в целом аналогична возврату
+        и обмену при традиционном шопинге, разница лишь в сроках и некоторых
+        нюансах.
+      </p>
+      <p>
+        Так, в соответствии с пунктом 4 статьи 26.1 вышеуказанного Закона,
+        приобретенный дистанционным способом товар можно вернуть в течение
+      </p>
+      <p>
+        7 дней с момента покупки или отказаться от него в любой момент до
+        получения.
+      </p>
+      <p>
+        Причем во втором случае никаких объяснений по поводу причины отказа от
+        товара представлять не нужно.
+      </p>
+      <p>
+        Деньги за возвращенный товар будут возвращены в течение от 3-х, но не
+        позже 14 рабочих дней.
+      </p>
+      <p>
+        Магазин возвращает денежные средства клиенту немедленно после получение
+        возвратного товара.
+      </p>
+      <p>
+        Cроки возврата денежных сумм на карту клиента ограничены работой
+        банковских систем.
+      </p>
+      <p>
+        При этом покупатель имеет право на получение полной стоимости товара,
+        только расходы на доставку полностью компенсируются продавцу.
+      </p>
+    </div>
+    <div class="return-online__bottom">
+      <p>
+        Мы постоянно работаем над повышением качества нашего сервиса и будем
+        рады узнать Ваши предложения по улучшению нашей работы!
+      </p>
+      <p>
+        Пишите нам на почту:
+        <a href="mailto:info.notonlyblack@gmail.com">
+          info.notonlyblack@gmail.com
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section class="subscribe">
+  <div class="container">
+    <div class="subscribe__wrapper">
+      <div class="subscribe__top">
+        <h2 class="subscribe__title">Подпишитесь на нас</h2>
+        <p class="subscribe__text">
+          и будьте в курсе наших новостей, и закрытых акций для владельцев карт
+          лояльности
+        </p>
+      </div>
+
+      <div class="subscribe__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a
+              class="socials__link socials__link--instagram"
+              href="#"
+              target="_blank"
+              aria-label="Инстаграм"
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link socials__link--fb"
+              href="#"
+              target="_blank"
+              aria-label="Фейсбук"
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link socials__link--mail"
+              href="#"
+              target="_blank"
+              aria-label="Gmail"
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link socials__link--telegram"
+              href="#"
+              target="_blank"
+              aria-label="Телеграм"
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link socials__link--whatsapp"
+              href="#"
+              target="_blank"
+              aria-label="Ватсап"
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="subscribe__link" href="#">Условия акции</a>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__right">
+        <div class="footer__col">
+          <a class="footer__logo logo" href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="footer__lists">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Размеры обуви </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Размеры одежды </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Цвета </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Доставка и оплата </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Гарантии </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Отзывы </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Контакты </a>
+            </li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вакансии </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Карта лояльности </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Конфиденциальность </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Мои заказы </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Публичная оферта </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Часто задаваемые вопросы</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contacts">
+        <span class="footer-contacts__name">Контакты магазина</span>
+
+        <div class="footer-contacts__inner">
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__item">
+              <address class="footer-contacts__link">
+                г. Москва, ул. Вавилова, 66, ТЦ Триумфальный, 3 этаж
+              </address>
+            </li>
+            <li class="footer-contacts__item">
+              <span> Телефон:</span>
+              <a class="footer-contacts__link" href="tel:+7 915 213-7661">
+                +7 915 213-7661
+              </a>
+            </li>
+            <li class="footer-contacts__item">
+              <span>What's app:</span>
+              <a class="footer-contacts__link" href="tel:+7 985 224-1587">
+                +7 985 224-1587
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-contacts__connection">
+            <a
+              class="footer-contacts__link"
+              href="mailto:info.notonlyblack@gmail.com"
+            >
+              info.notonlyblack@gmail.com
+            </a>
+
+            <button class="footer-contacts__btn" type="button">
+              Напишите нам
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        <p>
+          © 2022 Not Only Black - Магазин итальянской обуви и одежды. Авторские
+          права защищены. <a href="#">Политика конфиденциальности.</a>
+        </p>
+      </div>
+      <div class="footer__bottom-right">
+        <div class="footer__payment">
+          <span>Мы принимаем</span>
+          <img src="images/payment.png" width="170" height="21" alt="оплата" />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

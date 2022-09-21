@@ -1,0 +1,46 @@
+.badge {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+
+  &:hover {
+    &::after {
+      background-color: var(--color-orange);
+    }
+  }
+
+  &::after {
+    @include elDef();
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-blue);
+  }
+
+  &--vk {
+    &::after {
+      @include maskImage(url("../img/socials/vk.svg"), contain);
+    }
+  }
+
+  &--ok {
+    &::after {
+      @include maskImage(url("../img/socials/ok.svg"), contain);
+    }
+  }
+
+  &--rutube {
+    &::after {
+      @include maskImage(url("../img/socials/rutube.svg"), contain);
+    }
+  }
+
+  &--telegram {
+    &::after {
+      @include maskImage(url("../img/socials/telegram.svg"), contain);
+    }
+  }
+}

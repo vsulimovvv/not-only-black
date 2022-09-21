@@ -1,0 +1,32 @@
+.swiper-button-next,
+.swiper-button-prev {
+  width: 37px;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 200ms ease;
+
+  &::after {
+    @include elDef();
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms ease;
+    background-color: var(--color-white);
+    @include maskImage(url("../images/chevron.svg"), contain);
+  }
+
+  &:hover {
+    background-color: var(--color-white);
+
+    &::after {
+      background-color: var(--color-dark);
+    }
+  }
+}
+.swiper-button-prev {
+  &::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}

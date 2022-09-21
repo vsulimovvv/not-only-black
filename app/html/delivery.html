@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Not Only Black</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main mt">
+        @include('./components/_delivery.html')
+        @include('./components/_how-order.html')
+        @include('./components/_delivery-terms.html')
+        @include('./components/_delivery-cost.html')
+        @include('./components/_exchange-cost.html')
+        @include('./components/_delivery-procedure.html')
+        @include('./components/_return-online.html')
+        @include('./components/_subscribe.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>
