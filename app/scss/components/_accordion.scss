@@ -4,7 +4,7 @@
   &.active {
     .accordion-control {
       &::after {
-        content: "-";
+        transform: translateY(-50%) rotate(-90deg);
       }
     }
   }
@@ -15,19 +15,18 @@
     position: relative;
 
     &::after {
-      position: absolute;
-      content: "+";
-      width: 30px;
-      height: 30px;
+      @include elDef();
+      width: 12px;
+      height: 12px;
       top: 50%;
-      transform: translateY(-50%);
-      right: 30px;
-      font-size: 30px;
+      transform: translateY(-50%) rotate(90deg);
+      right: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: var(--color-dark);
+      background-color: rgba(34,34,34,0.99);
       transition: 250ms ease;
+      @include maskImage(url('../images/chevron.svg'), contain);
     }
   }
 
