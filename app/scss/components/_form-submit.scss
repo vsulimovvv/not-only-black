@@ -20,10 +20,39 @@
     line-height: 1;
     font-weight: 300;
     height: 100%;
-    color: #2c2c2c;
+    color: var(--color-black);
+
+    &::placeholder {
+      color: #2c2c2c;
+    }
 
     &:focus {
       outline: transparent;
+    }
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 25px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .checkbox {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+
+    &__text {
+      color: #8c8c8c;
+    }
+
+    a {
+      color: #2c2c2c;
     }
   }
 
@@ -36,13 +65,17 @@
       grid-column: 1/-1;
       height: 80px;
     }
+
+    &--select {
+      grid-column: 1/-1;
+    }
   }
 
   &__btn {
     border-radius: 5px;
     padding-left: 50px;
     padding-right: 50px;
-    
+
     @include breakpointsMaxW($bp-768) {
       width: 100%;
     }

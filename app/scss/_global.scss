@@ -98,9 +98,10 @@ body {
   transition: 300ms ease, transform 0s;
   text-align: center;
   border-radius: 5px;
+  border: 1px solid var(--color-dark);
 
   &:hover {
-    background-color: rgba(239, 239, 239, 0.99);
+    background-color: transparent;
     color: var(--color-dark);
   }
 
@@ -111,6 +112,7 @@ body {
   &--light {
     background-color: rgba(239, 239, 239, 0.99);
     color: var(--color-dark);
+    border-color: transparent;
 
     &:hover {
       background-color: var(--color-dark);
@@ -333,5 +335,11 @@ body {
       @include backgroundImage(url('../images/content/lines.png'), contain);
       z-index: 10;
     }
+  }
+}
+
+.nice-select{
+  .list{
+    width: 100%;
   }
 }

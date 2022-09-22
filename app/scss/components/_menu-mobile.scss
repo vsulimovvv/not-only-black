@@ -15,7 +15,7 @@
   transition: 350ms ease-in-out;
   overflow-y: auto;
 
-  @include adaptive-value("padding", 40, 20, 1);
+  @include adaptive-value('padding', 40, 20, 1);
   padding-bottom: 20px;
 
   &.active {
@@ -35,12 +35,6 @@
   &__close {
     width: 30px;
     height: 30px;
-
-    &:hover {
-      path {
-        stroke: var(--color-orange);
-      }
-    }
 
     svg {
       width: 100%;
@@ -70,9 +64,16 @@
     display: block;
     color: var(--color-black);
     transition: 200ms ease;
+    
+    span {
+      border-bottom: 1px solid transparent;
+      transition: 200ms ease;
+    }
 
     &:hover {
-      color: var(--color-orange);
+      span {
+        border-bottom-color: var(--color-dark);
+      }
     }
   }
 

@@ -164,16 +164,16 @@
 
     <ul class="mobile-menu__list">
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">О программе</a>
+        <a class="mobile-menu__link" href="#"><span>Женское</span></a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Проекты</a>
+        <a class="mobile-menu__link" href="#"><span>Мужское</span></a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Обучение</a>
+        <a class="mobile-menu__link" href="#"><span>New</span></a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Полезные материалы</a>
+        <a class="mobile-menu__link" href="#"><span>Sale</span></a>
       </li>
     </ul>
 
@@ -311,7 +311,8 @@
         </div>
       </div> -->
 
-      <main class="main mt"><section class="product">
+      <main class="main mt">
+        <section class="product">
   <div class="container">
     <div class="product__wrapper">
       <div class="product__slider">
@@ -455,7 +456,7 @@
         <div class="product-info__top">
           <div class="product-info__prices">
             <span class="product-info__price product-info__price--new"
-              >23 900 ₽</span
+              >23 900 <small>₽</small></span
             >
             <span class="product-info__price product-info__price--old"
               >33 900 ₽</span
@@ -473,25 +474,30 @@
         <div class="product-info__sizes">
           <div class="product-info__size">
             <label class="checkbox-btn">
-              <input class="checkbox-btn__input" type="checkbox" />
+              <input class="checkbox-btn__input" type="radio" name="size" />
               <span class="checkbox-btn__text"> 38 </span>
             </label>
           </div>
           <div class="product-info__size">
             <label class="checkbox-btn">
-              <input class="checkbox-btn__input" type="checkbox" checked />
+              <input
+                class="checkbox-btn__input"
+                type="radio"
+                name="size"
+                checked
+              />
               <span class="checkbox-btn__text"> 39 </span>
             </label>
           </div>
           <div class="product-info__size">
             <label class="checkbox-btn">
-              <input class="checkbox-btn__input" type="checkbox" />
+              <input class="checkbox-btn__input" type="radio" name="size" />
               <span class="checkbox-btn__text"> 40 </span>
             </label>
           </div>
           <div class="product-info__size">
             <label class="checkbox-btn">
-              <input class="checkbox-btn__input" type="checkbox" />
+              <input class="checkbox-btn__input" type="radio" name="size" />
               <span class="checkbox-btn__text"> 41 </span>
             </label>
           </div>
@@ -538,7 +544,7 @@
               class="product-accordions__control accordion-control"
               type="button"
             >
-            Обратите внимание
+              Обратите внимание
             </button>
 
             <div class="product-accordions__content accordion-content">
@@ -557,7 +563,7 @@
               class="product-accordions__control accordion-control"
               type="button"
             >
-            Условия доставки
+              Условия доставки
             </button>
 
             <div class="product-accordions__content accordion-content">
@@ -576,7 +582,634 @@
     </div>
   </div>
 </section>
-</main>
+
+        <section class="products-slider products-slider--pt-40">
+  <div class="container">
+    <h2 class="products-slider__title products-slider__title--left">Похожие товары</h2>
+
+    <div class="products-slider__slider swiper">
+      <ul class="products-slider__slides swiper-wrapper">
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/1.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Сапоги Duca d' Ascalona</a>
+              </h3>
+
+              <span class="product-card__price">30 750 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/2.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Пуховик c капюшоном пух Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">67 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/3.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Туфли FRU.IT</a>
+              </h3>
+
+              <span class="product-card__price">30 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/4.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Куртка Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">59 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/5.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Брюки бархатные Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">22 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/1.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Сапоги Duca d' Ascalona</a>
+              </h3>
+
+              <span class="product-card__price">30 750 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/2.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Пуховик c капюшоном пух Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">67 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/3.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Туфли FRU.IT</a>
+              </h3>
+
+              <span class="product-card__price">30 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/4.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Куртка Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">59 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/5.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Брюки бархатные Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">22 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <button
+        class="swiper-button-next"
+        type="button"
+        aria-label="Следующий"
+      ></button>
+      <button
+        class="swiper-button-prev"
+        type="button"
+        aria-label="Предыдущий"
+      ></button>
+    </div>
+  </div>
+</section>
+
+        <section class="products-slider products-slider--pt-40">
+  <div class="container">
+    <h2 class="products-slider__title products-slider__title--left">
+      С этим товаром можно купить
+    </h2>
+
+    <div class="products-slider__slider swiper">
+      <ul class="products-slider__slides swiper-wrapper">
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/1.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Сапоги Duca d' Ascalona</a>
+              </h3>
+
+              <span class="product-card__price">30 750 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/2.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Пуховик c капюшоном пух Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">67 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/3.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Туфли FRU.IT</a>
+              </h3>
+
+              <span class="product-card__price">30 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/4.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Куртка Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">59 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/5.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Брюки бархатные Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">22 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/1.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Сапоги Duca d' Ascalona</a>
+              </h3>
+
+              <span class="product-card__price">30 750 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/2.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Пуховик c капюшоном пух Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">67 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/3.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Туфли FRU.IT</a>
+              </h3>
+
+              <span class="product-card__price">30 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/4.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Куртка Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">59 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="products-slider__slide swiper-slide">
+          <article class="product-card">
+            <a class="product-card__top" href="#">
+              <img
+                loading="lazy"
+                src="images/products/5.jpg"
+                class="image"
+                alt="products"
+              />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">
+                <a href="#">Брюки бархатные Max Mara</a>
+              </h3>
+
+              <span class="product-card__price">22 900 ₽</span>
+              <div class="product-card__btns">
+                <a class="product-card__btn btn btn--light" href="#">
+                  Купить
+                </a>
+                <button class="product-card__favorites" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <button
+        class="swiper-button-next"
+        type="button"
+        aria-label="Следующий"
+      ></button>
+      <button
+        class="swiper-button-prev"
+        type="button"
+        aria-label="Предыдущий"
+      ></button>
+    </div>
+  </div>
+</section>
+
+      </main>
       <footer class="footer">
   <div class="container">
     <div class="footer__top">
@@ -640,7 +1273,7 @@
         <div class="footer-contacts__inner">
           <ul class="footer-contacts__list">
             <li class="footer-contacts__item">
-              <address class="footer-contacts__link">
+              <address class="footer-contacts__address">
                 г. Москва, ул. Вавилова, 66, ТЦ Триумфальный, 3 этаж
               </address>
             </li>

@@ -164,16 +164,16 @@
 
     <ul class="mobile-menu__list">
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">О программе</a>
+        <a class="mobile-menu__link" href="#"><span>Женское</span></a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Проекты</a>
+        <a class="mobile-menu__link" href="#"><span>Мужское</span></a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Обучение</a>
+        <a class="mobile-menu__link" href="#"><span>New</span></a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Полезные материалы</a>
+        <a class="mobile-menu__link" href="#"><span>Sale</span></a>
       </li>
     </ul>
 
@@ -354,7 +354,7 @@
                 placeholder="Введите свой E-mail"
               />
             </div>
-            <div class="form-submit__group form-submit__group--big">
+            <div class="form-submit__group form-submit__group--select">
               <select class="select form-submit__select">
                 <option>Выберите тему вопроса</option>
                 <option value="1">Выберите тему вопроса</option>
@@ -370,6 +370,14 @@
             </div>
           </div>
           <div class="form-submit__bottom">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" checked />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">
+                Согласен
+                <a href="#">с условиями обработки персональных данных</a>
+              </span>
+            </label>
             <button class="form-submit__btn btn" type="submit">
               Отправить
             </button>
@@ -506,7 +514,7 @@
         <div class="footer-contacts__inner">
           <ul class="footer-contacts__list">
             <li class="footer-contacts__item">
-              <address class="footer-contacts__link">
+              <address class="footer-contacts__address">
                 г. Москва, ул. Вавилова, 66, ТЦ Триумфальный, 3 этаж
               </address>
             </li>

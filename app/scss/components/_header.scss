@@ -14,6 +14,16 @@
     .header__top {
       display: none;
     }
+
+    .menu {
+      &__link {
+        padding-bottom: 10px;
+      }
+    }
+
+    .header__tools {
+      padding-bottom: 10px;
+    }
   }
 
   &__toggle {

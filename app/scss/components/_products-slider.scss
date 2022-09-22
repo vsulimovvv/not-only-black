@@ -1,16 +1,24 @@
 .products-slider {
-  @include adaptive-value("padding-top", 75, 40, 1);
-  @include adaptive-value("padding-bottom", 75, 40, 1);
+  @include adaptive-value('padding-top', 75, 40, 1);
+  @include adaptive-value('padding-bottom', 75, 40, 1);
+
+  &--pt-40 {
+    @include adaptive-value('padding-top', 40, 30, 1);
+  }
 
   &__title {
     text-align: center;
     @include fz35();
-    @include adaptive-value("margin-bottom", 45, 30, 1);
+    @include adaptive-value('margin-bottom', 45, 30, 1);
+
+    &--left {
+      text-align: left;
+    }
   }
 
   &__top {
     width: 100%;
-    @include adaptive-value("margin-bottom", 55, 35, 1);
+    @include adaptive-value('margin-bottom', 55, 35, 1);
 
     @include breakpointsMaxW($bp-991) {
       overflow-x: auto;
@@ -31,7 +39,7 @@
       flex-shrink: 0;
 
       &:not(:last-child) {
-        @include adaptive-value("margin-right", 45, 20, 1);
+        @include adaptive-value('margin-right', 45, 20, 1);
       }
     }
 
@@ -39,9 +47,9 @@
       color: #797979;
       padding: 0 10px 15px 10px;
       position: relative;
-      @include adaptive-value("padding-left", 10, 5, 1);
-      @include adaptive-value("padding-right", 10, 5, 1);
-      @include adaptive-value("padding-bottom", 15, 10, 1);
+      @include adaptive-value('padding-left', 10, 5, 1);
+      @include adaptive-value('padding-right', 10, 5, 1);
+      @include adaptive-value('padding-bottom', 15, 10, 1);
 
       &::after {
         @include elDef();
@@ -110,7 +118,7 @@
     box-sizing: border-box;
     max-width: 240px;
 
-    @include adaptive-value("max-width", 240, 190, 1);
+    @include adaptive-value('max-width', 240, 190, 1);
   }
 
   &__content {

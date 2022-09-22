@@ -1,6 +1,6 @@
 .product {
   padding-top: 30px;
-  @include adaptive-value('padding-bottom', 60, 40, 1);
+  padding-bottom: 30px;
 
   &__title {
     @include adaptive-value('font-size', 26, 25, 1);
@@ -271,6 +271,10 @@
     }
 
     &__price {
+      small {
+        font-size: 18px;
+      }
+
       &--new {
         font-size: 26px;
         line-height: 1;
@@ -283,6 +287,7 @@
         font-size: 18px;
         font-weight: 300;
         color: #bbbbbb;
+        text-decoration: line-through;
       }
     }
 
@@ -330,8 +335,9 @@
         margin: -1px;
       }
 
-      &__input:checked + &__text {
-        border-color: #000;
+      .checkbox-btn__input:checked + .checkbox-btn__text {
+        border-color: var(--color-black);
+        color: var(--color-black);
       }
 
       &__text {
@@ -344,6 +350,7 @@
         font-size: 14px;
         font-weight: 300;
         color: #565656;
+        line-height: 1;
       }
     }
 
@@ -421,9 +428,21 @@
 }
 
 .product-accordions {
-  &__accordion.active {
-    .product-accordions__control {
-      border-bottom-color: transparent;
+  &__accordion {
+    &.accordion.active {
+      .product-accordions__control {
+        border-bottom-color: transparent;
+      }
+    }
+
+    &:not(:last-child) {
+      .product-accordions__control {
+        border-bottom: 1px solid #d4d4d2;
+      }
+
+      .product-accordions__content {
+        border-bottom: 1px solid #d4d4d2;
+      }
     }
   }
 
@@ -432,21 +451,15 @@
     display: flex;
     align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid #d4d4d2;
     font-size: 18px;
     line-height: 1;
     font-weight: 400;
     color: #222222;
-
-    &:last-child {
-      border-bottom: none;
-    }
   }
 
   &__content {
     div {
       padding-bottom: 15px;
-      border-bottom: 1px solid #d4d4d2;
     }
   }
 }
