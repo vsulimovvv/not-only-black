@@ -5,10 +5,16 @@
   width: 100%;
   background-color: var(--color-white);
   z-index: 10;
+  border-bottom: 1px solid #ededed;
   transition: 200ms ease;
+
+  &--main {
+    border-bottom: none;
+  }
 
   &.scroll-header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-bottom-color: transparent;
 
     .header__bottom,
     .header__top {
@@ -339,7 +345,7 @@
   align-items: center;
   font-size: 16px;
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 20px;
   }
 
