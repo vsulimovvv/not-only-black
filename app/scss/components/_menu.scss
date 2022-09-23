@@ -65,7 +65,7 @@
         align-items: center;
         justify-content: center;
 
-        @include backgroundImage(url("../images/sale-badge.svg"), contain);
+        @include backgroundImage(url('../images/sale-badge.svg'), contain);
       }
     }
   }
@@ -78,6 +78,8 @@
   }
 
   &__item {
+    position: relative;
+
     &:not(:last-child) {
       margin-right: 45px;
     }
@@ -88,5 +90,11 @@
     line-height: 1;
     color: #282828;
     padding: 10px 0;
+    border-bottom: 1px solid transparent;
+    transition: 250ms ease;
+
+    &:hover {
+      border-bottom-color: var(--color-dark);
+    }
   }
 }

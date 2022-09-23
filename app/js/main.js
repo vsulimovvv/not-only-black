@@ -2,17 +2,49 @@ window.addEventListener('DOMContentLoaded', () => {
   // * Nice Select
   $('select').niceSelect();
 
-  // (function reviewsSlide() {
-  //   const slides = document.querySelectorAll('.reviews__slide');
-  //   slides.forEach((slide) => {
-  //     if (slide.classList.contains('swiper-slide-prev')) {
-  //       // slide.style.transform = 'scale(2)';
-  //       console.log(slide);
-  //     }
-  //   });
-  // })();
+  (function cookie() {
+    const cookieBtn = document.querySelectorAll('.cookie__btn');
+    const cookieContent = document.querySelector('.cookie');
 
-  // * ====+ sliders
+    cookieBtn.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        cookieContent.style.display = 'none';
+      });
+    });
+  })();
+
+  (function showDropmenu() {
+    const dropdowns = document.querySelectorAll('.dropmenu');
+    const menuLinks = document.querySelectorAll('.menu-header__link');
+
+    menuLinks.forEach((link) => {
+      if (link) {
+        link.addEventListener('mouseover', (e) => {
+          let linkName = link.dataset.link;
+
+          dropdowns.forEach((dropdown) => {
+            let dropdownName = dropdown.dataset.target;
+
+            if (linkName === dropdownName) {
+              dropdown.classList.add('active');
+            }
+          });
+        });
+        link.addEventListener('mouseleave', (e) => {
+          let linkName = link.dataset.link;
+
+          dropdowns.forEach((dropdown) => {
+            let dropdownName = dropdown.dataset.target;
+            if (linkName === dropdownName) {
+              dropdown.classList.remove('active');
+            }
+          });
+        });
+      }
+    });
+  })();
+
+  // * ===== sliders
   (function collectionSlider() {
     const swiper3 = new Swiper('.collections__slider', {
       slidesPerView: 'auto',
