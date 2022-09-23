@@ -52,9 +52,7 @@
   </head>
 
   <body>
-    
-
-<!-- <div class="popup popup--projects">
+    <div class="popup popup--sizes">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg
@@ -81,45 +79,134 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <div class="popup__title">Обратный звонок</div>
+      <div class="popup__title">Выбрать размер</div>
 
-      <form class="request__form form-submit">
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="service-name">Имя</label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--name">
-            <input
-              class="form-submit__input"
-              name="name"
-              id="service-name"
-              type="text"
-              placeholder="Введите ваше имя"
-              required
-            />
+      <div class="choose-size">
+        <p class="choose-size__text">
+          Чтобы выбрать нужныйподходящий размер, рекомендуем сравнить указанные
+          параметры.
+        </p>
+
+        <div class="choose-size__table">
+          <div class="choose-size__row">
+            <div class="choose-size__left">Размер</div>
+            <div class="choose-size__right">Длина стопы, см</div>
+          </div>
+          <div class="choose-size__row">
+            <div class="choose-size__left">36</div>
+            <div class="choose-size__right">23,5</div>
+          </div>
+          <div class="choose-size__row">
+            <div class="choose-size__left">37</div>
+            <div class="choose-size__right">24</div>
+          </div>
+          <div class="choose-size__row">
+            <div class="choose-size__left">3836</div>
+            <div class="choose-size__right">24,5</div>
+          </div>
+          <div class="choose-size__row">
+            <div class="choose-size__left">39</div>
+            <div class="choose-size__right">25</div>
+          </div>
+          <div class="choose-size__row">
+            <div class="choose-size__left">40</div>
+            <div class="choose-size__right">26,5</div>
+          </div>
+          <div class="choose-size__row">
+            <div class="choose-size__left">41</div>
+            <div class="choose-size__right">26,5</div>
           </div>
         </div>
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="service-tel">
-            Контактный телефон
-          </label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
-            <input
-              class="form-submit__input"
-              name="tel"
-              id="service-tel"
-              type="tel"
-              placeholder="+7 (___) ___-__-__"
-              required
-            />
-          </div>
-        </div>
-
-        <button class="form-submit__btn btn" type="button">
-          Заказать звонок
-        </button>
-      </form>
+      </div>
     </div>
   </div>
-</div> -->
+</div>
+
+<div class="popup popup--subscribe">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 6L18 18"
+          stroke="#0F0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M18 6L6 18"
+          stroke="#0F0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__left">
+        <div class="popup__title">
+          Подпишитесь на <br />
+          Notonlyblack
+        </div>
+
+        <p class="popup__text">Узнавайте о новинках и выгодных предложениях</p>
+
+        <form class="popup__form form-subscribe">
+          <div class="form-subscribe__checkboxes">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text"> Для женщин </span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text"> Для мужчин </span>
+            </label>
+          </div>
+          <label class="form-subscribe__group">
+            <input
+              class="form-subscribe__input"
+              type="text"
+              placeholder="Имя *"
+            />
+          </label>
+          <label class="form-subscribe__group">
+            <input
+              class="form-subscribe__input"
+              type="text"
+              placeholder="E-mail *"
+            />
+          </label>
+
+          <div class="form-subscribe__policy">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">
+                Принимаю политику конфидениальности
+              </span>
+            </label>
+          </div>
+
+          <button class="form-subscribe__btn btn" type="submit">
+            ПОДПИСАТЬСЯ
+          </button>
+        </form>
+      </div>
+      <div
+        class="popup__right"
+        style="background-image: url('images/popup-subscribe.jpg')"
+      ></div>
+    </div>
+  </div>
+</div>
 
 
     <div class="site-wrapper">
@@ -255,6 +342,33 @@
 
               <span class="header-tools__link-count"> 0 </span>
             </a>
+
+            <div class="cart-box">
+              <div class="cart-box__top">
+                <span class="cart-box__count">
+                  <span>1</span> продукт в корзине
+                </span>
+
+                <div class="cart-item">
+                  <div class="cart-item__img">
+                    <img src="images/product/1.jpg" alt="product" />
+                  </div>
+                  <div class="cart-item__info">
+                    <h3 class="cart-item__name"><a href="#">Camerlengo</a></h3>
+
+                    <p class="cart-item__text">Черные меховые кеды</p>
+                    <p class="cart-item__text">23 900 ₽</p>
+                    <p class="cart-item__text">Размер: <span>39</span></p>
+                  </div>
+                </div>
+
+                <button class="cart-box__remove" type="button">Удалить</button>
+              </div>
+
+              <div class="cart-box__bottom">
+                <a class="cart-box__btn btn" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

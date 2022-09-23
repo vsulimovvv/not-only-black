@@ -198,7 +198,7 @@ window.addEventListener('DOMContentLoaded', () => {
         format: wNumb({
           decimals: 0,
           thousand: ' ',
-          suffix: ' ',
+          suffix: ' ₽',
         }),
       });
 
@@ -290,7 +290,8 @@ window.addEventListener('DOMContentLoaded', () => {
         });
       }
     }
-    bindModal('.projects-top__btn', '.popup--projects', '.popup__close');
+    bindModal('.product-info__sizes-btn', '.popup--sizes', '.popup__close');
+    bindModal('.footer-contacts__btn', '.popup--subscribe', '.popup__close');
   })();
 
   (function fixedHeader() {

@@ -13,7 +13,21 @@
     <div class="site-wrapper">
       @include('./components/_header.html')
 
-      <main class="main mt">@include('./components/_vacancies.html')</main>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная </a>
+            </li>
+
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link active">Вакансии</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <main class="main">@include('./components/_vacancies.html')</main>
       @include('./components/_footer.html')
     </div>
 

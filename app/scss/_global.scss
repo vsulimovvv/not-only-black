@@ -58,7 +58,7 @@ body {
   z-index: 10;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(5px);
   transition: 200ms ease-in;
 
@@ -196,6 +196,8 @@ body {
     &.accordion__control {
       &::after {
         right: 0;
+        width: 10px;
+        height: 10px;
       }
     }
   }
@@ -243,6 +245,14 @@ body {
       color: var(--color-accent);
     }
   }
+
+  &__reset {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    color: #b4b4b3;
+    border-bottom: 1px solid #b4b4b3;
+  }
 }
 
 .range-slider {
@@ -280,16 +290,23 @@ body {
   &__values {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
+  }
+
+  &__min {
+    margin-right: 5px;
+  }
+
+  &__max {
+    margin-left: 5px;
   }
 
   &__min,
   &__max {
     flex-shrink: 0;
-    width: 80px;
+    width: auto;
     height: 30px;
-    background-color: #f3f3f3;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -338,8 +355,46 @@ body {
   }
 }
 
-.nice-select{
-  .list{
+.nice-select {
+  .list {
     width: 100%;
+  }
+}
+
+.choose-size {
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 1px;
+    height: 48px;
+    line-height: 1;
+    @include adaptive-value('font-size', 20, 16, 1);
+
+    &:nth-child(1) {
+      .choose-size__left,
+      .choose-size__right {
+        background-color: #858585;
+        font-weight: 300;
+        color: var(--color-white);
+        width: 100%;
+      }
+    }
+  }
+
+  &__left,
+  &__right {
+    line-height: 1;
+    padding: 12px 20px 10px;
+    background-color: rgba(243, 243, 243, 0.99);
+    border-top: 1px solid var(--color-white);
+    width: 100%;
+
+    @include breakpointsMaxW($bp-360) {
+      padding-left: 15px;
+    }
   }
 }

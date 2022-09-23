@@ -1,6 +1,7 @@
 .contacts {
   font-weight: 300;
   color: #2c2c2c;
+  padding-top: 30px;
   @include adaptive-value('padding-bottom', 110, 70, 1);
 
   &__map {

@@ -154,6 +154,15 @@
     }
   }
 
+  .nice-select {
+    .list {
+      top: calc(100% + 8px);
+      width: 190px;
+      right: 0;
+      left: initial
+    }
+  }
+
   &__more-btn {
     justify-self: center;
     font-size: 11px;

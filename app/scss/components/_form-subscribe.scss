@@ -1,0 +1,57 @@
+.form-subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__group {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__input {
+    display: block;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.99);
+    border: 1px solid #d6d6d6;
+    padding: 10px 20px;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 17px 15px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+
+  &__checkboxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 35px;
+    gap: 20px;
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+      margin-bottom: 20px;
+    }
+
+    .checkbox {
+      &__text {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__policy {
+    margin-bottom: 20px;
+  }
+
+  .checkbox {
+    &__box {
+      width: 27px;
+      height: 27px;
+    }
+  }
+}
