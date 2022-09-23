@@ -130,6 +130,15 @@
     }
   }
 
+  .swiper-slide {
+    &.swiper-slide-prev {
+      transform: scale(1.15) translateX(10px);
+    }
+    &.swiper-slide-next {
+      transform: scale(1.15) translateX(-10px);
+    }
+  }
+
   &__bottom {
     display: flex;
     align-items: center;

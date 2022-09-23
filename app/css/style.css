@@ -5065,6 +5065,16 @@ body.no-scroll {
   opacity: 0;
   visibility: hidden;
 }
+.reviews .swiper-slide.swiper-slide-prev {
+  -webkit-transform: scale(1.15) translateX(10px);
+      -ms-transform: scale(1.15) translateX(10px);
+          transform: scale(1.15) translateX(10px);
+}
+.reviews .swiper-slide.swiper-slide-next {
+  -webkit-transform: scale(1.15) translateX(-10px);
+      -ms-transform: scale(1.15) translateX(-10px);
+          transform: scale(1.15) translateX(-10px);
+}
 .reviews__bottom {
   display: -webkit-box;
   display: -ms-flexbox;

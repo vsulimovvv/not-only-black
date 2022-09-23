@@ -2,6 +2,16 @@ window.addEventListener('DOMContentLoaded', () => {
   // * Nice Select
   $('select').niceSelect();
 
+  // (function reviewsSlide() {
+  //   const slides = document.querySelectorAll('.reviews__slide');
+  //   slides.forEach((slide) => {
+  //     if (slide.classList.contains('swiper-slide-prev')) {
+  //       // slide.style.transform = 'scale(2)';
+  //       console.log(slide);
+  //     }
+  //   });
+  // })();
+
   // * ====+ sliders
   (function collectionSlider() {
     const swiper3 = new Swiper('.collections__slider', {
