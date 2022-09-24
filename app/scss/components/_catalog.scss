@@ -6,6 +6,83 @@
     @include fz35();
   }
 
+  .product-card {
+    position: relative;
+
+    &:hover {
+      .product-card {
+        &__bottom {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        &__btn {
+          background-color: var(--color-dark);
+          color: var(--color-white);
+        }
+
+        &__favorites {
+          border-color: var(--color-dark);
+
+          svg {
+            fill: var(--color-dark);
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      color: #242424;
+      z-index: 2;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: 300ms ease;
+
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--color-white);
+
+      span {
+        font-weight: 300;
+      }
+    }
+
+    &__btn {
+      border-radius: 0;
+      transition: 300ms ease;
+    }
+
+    &__favorites {
+      background-color: rgba(255, 255, 255, 0.99);
+      border: 1px solid #d9d9d9;
+      border-radius: 0;
+      transition: 300ms ease;
+
+      svg {
+        fill: #d3d3d3;
+        transition: 300ms ease;
+      }
+
+      &:hover {
+        border-color: var(--color-dark);
+        svg {
+          fill: var(--color-dark);
+        }
+      }
+    }
+  }
+
   &__filter {
     @include maskImage(url('../images/icons/filter.svg'), contain);
     background-color: var(--color-dark);
@@ -99,7 +176,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    @include adaptive-value('margin-bottom', 50, 40, 1);
+    @include adaptive-value('margin-bottom', 80, 50, 1);
 
     @include breakpointsMaxW($bp-container) {
       gap: 10px;
@@ -159,7 +236,7 @@
       top: calc(100% + 8px);
       width: 190px;
       right: 0;
-      left: initial
+      left: initial;
     }
   }
 

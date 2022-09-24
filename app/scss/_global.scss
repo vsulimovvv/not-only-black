@@ -411,7 +411,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-z-index: 5;
+  z-index: 5;
 
   &__text {
     margin-right: 80px;
@@ -419,5 +419,29 @@ z-index: 5;
 
   &__btn {
     color: var(--color-white);
+  }
+}
+
+.card-badge {
+  width: 64px;
+  height: 64px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: var(--color-white);
+  border-radius: 50%;
+
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #242424;
+  }
+
+  &__price {
+    color: #c83c3c;
   }
 }

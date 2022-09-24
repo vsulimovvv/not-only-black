@@ -80,4 +80,18 @@
       width: 100%;
     }
   }
+
+  .nice-select {
+    &::after {
+      @include elDef();
+      border: none;
+      width: 22px;
+      height: 22px;
+      transform: rotate(0);
+      top: 50%;
+      transform: translate(0, -50%);
+      margin-top: 0;
+      @include backgroundImage(url('../images/chevron-full.png'), contain);
+    }
+  }
 }

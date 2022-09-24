@@ -2,13 +2,6 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  &__title {
-    @include adaptive-value('font-size', 26, 25, 1);
-    color: #323131;
-    margin-bottom: 8px;
-    font-weight: 400;
-  }
-
   &__text {
     margin-bottom: 25px;
     font-size: 16px;
@@ -223,34 +216,6 @@
         height: calc(280px + (430 - 280) * ((100vw - 360px) / (576 - 360)));
       }
 
-      // .swiper-button-prev,
-      // .swiper-button-next {
-      //   width: 30px;
-      //   height: 30px;
-      //   position: absolute;
-      //   background-color: var(--color-white);
-      //   top: 50%;
-      //   border-radius: 6px;
-
-      //   &::after {
-      //     background-color: var(--color-dark);
-      //     width: 50%;
-      //     height: 50%;
-      //     @include maskImage(url('../images/icons/chevron.svg'), contain);
-      //   }
-      // }
-
-      // .swiper-button-prev {
-      //   left: 10px;
-      //   transform: rotate(-90deg);
-      // }
-
-      // .swiper-button-next {
-      //   right: 10px;
-      //   left: initial;
-      //   transform: rotate(-90deg);
-      // }
-
       .swiper-slide {
         box-sizing: border-box;
         width: 100%;
@@ -279,6 +244,9 @@
 
   .product-info {
     &__title {
+      color: #323131;
+      margin-bottom: 8px;
+      font-weight: 300;
       @include adaptive-value('font-size', 30, 24, 1);
       @include adaptive-value('margin-bottom', 30, 20, 1);
     }
