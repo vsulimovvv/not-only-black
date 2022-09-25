@@ -403,7 +403,6 @@ body {
   position: fixed;
   bottom: 0;
   background-color: rgba(31, 31, 31, 0.99);
-  font-size: 17px;
   line-height: 1;
   color: var(--color-white);
   padding: 20px 15px;
@@ -413,12 +412,26 @@ body {
   justify-content: center;
   z-index: 5;
 
+  @include adaptive-value('font-size', 17, 14, 1);
+
   &__text {
     margin-right: 80px;
+
+    @include breakpointsMaxW($bp-768) {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
   }
 
   &__btn {
     color: var(--color-white);
+  }
+
+  @include breakpointsMaxW($bp-768) {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
