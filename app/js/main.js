@@ -1,17 +1,26 @@
+function setLocalStorage() {
+  localStorage.setItem('cookies', 'cookies');
+}
+
+(function cookie() {
+  const cookieBtn = document.querySelectorAll('.cookie__btn');
+  const cookieContent = document.querySelector('.cookie');
+
+  cookieBtn.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      setLocalStorage();
+      cookieContent.style.display = 'none';
+    });
+
+    if (localStorage.getItem('cookies')) {
+      cookieContent.style.display = 'none';
+    }
+  });
+})();
+
 window.addEventListener('DOMContentLoaded', () => {
   // * Nice Select
   $('select').niceSelect();
-
-  (function cookie() {
-    const cookieBtn = document.querySelectorAll('.cookie__btn');
-    const cookieContent = document.querySelector('.cookie');
-
-    cookieBtn.forEach((btn) => {
-      btn.addEventListener('click', (e) => {
-        cookieContent.style.display = 'none';
-      });
-    });
-  })();
 
   (function showDropmenu() {
     const dropdowns = document.querySelectorAll('.dropmenu');
