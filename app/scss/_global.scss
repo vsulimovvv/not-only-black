@@ -70,7 +70,7 @@ body {
 }
 
 .logo {
-    display: block;
+  display: block;
   @include adaptive-value('width', 120, 80, 1);
   @include adaptive-value('height', 60, 40, 1);
 
@@ -448,5 +448,101 @@ body {
 
   &__price {
     color: #c83c3c;
+  }
+}
+
+#ouibounce-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+#ouibounce-modal .underlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  animation: fadein 0.5s;
+}
+
+#ouibounce-modal .modal {
+  padding: 35px;
+  max-width: 470px;
+  width: calc(100% - 40px);
+  height: 400px;
+  max-height: calc(100% - 100px);
+  background-color: #f0f1f2;
+  z-index: 1;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  animation: popin 0.3s;
+}
+
+#ouibounce-modal .modal-title {
+  font-weight: 700;
+  margin: 0 auto;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--color-dark);
+  text-align: center;
+  @include adaptive-value('font-size', 25, 20, 1);
+}
+
+#ouibounce-modal .modal-body {
+  padding: 35px;
+}
+
+#ouibounce-modal .modal-close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+#ouibounce-modal .modal-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #858585;
+  margin-bottom: 30px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popin {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  85% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }

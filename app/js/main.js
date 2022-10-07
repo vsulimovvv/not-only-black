@@ -459,3 +459,22 @@ window.addEventListener('DOMContentLoaded', () => {
     'active'
   );
 });
+
+(function popup() {
+  var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+    aggressive: true,
+    timer: 0,
+  });
+
+  $('body').on('click', function () {
+    $('#ouibounce-modal').hide();
+  });
+
+  $('#ouibounce-modal .modal-close').on('click', function () {
+    $('#ouibounce-modal').hide();
+  });
+
+  $('#ouibounce-modal .modal').on('click', function (e) {
+    e.stopPropagation();
+  });
+})();
