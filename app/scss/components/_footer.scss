@@ -1,7 +1,6 @@
 .footer {
   font-size: 16px;
   color: #8a8a8a;
-  // margin-bottom: 60px;
 
   &__top {
     padding-top: 45px;
@@ -22,7 +21,6 @@
 
   &__bottom {
     display: flex;
-    // align-items: center;
     justify-content: space-between;
     padding: 15px 0;
     font-size: 16px;
@@ -31,9 +29,12 @@
     width: 100%;
 
     @include breakpointsMaxW($bp-991) {
-      // flex-direction: column-reverse;
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      text-align: center;
     }
 
     &-left {
@@ -68,6 +69,11 @@
     &-right {
       flex-direction: column;
       align-items: flex-start;
+
+      @include breakpointsMaxW($bp-576) {
+        align-items: center;
+        width: 100%;
+      }
     }
 
     .company {
@@ -94,6 +100,10 @@
           width: 140px;
         }
       }
+
+      @include breakpointsMaxW($bp-576) {
+        justify-content: center;
+      }
     }
   }
 
@@ -104,6 +114,10 @@
 
     img {
       object-fit: contain;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      justify-content: center;
     }
   }
 
@@ -128,6 +142,7 @@
 
     @include breakpointsMaxW($bp-360) {
       grid-template-columns: 1fr;
+      text-align: center;
       gap: 10px;
     }
   }
@@ -145,6 +160,7 @@
 
     @include breakpointsMaxW($bp-576) {
       grid-template-columns: 1fr;
+      place-items: center;
     }
   }
 
@@ -175,6 +191,8 @@
 
       @include breakpointsMaxW($bp-576) {
         grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
       }
     }
 
@@ -187,6 +205,10 @@
       border-bottom: 1px solid #dddddd;
       padding-bottom: 11px;
       margin-bottom: 20px;
+
+      @include breakpointsMaxW($bp-576) {
+        text-align: center;
+      }
     }
 
     &__item {

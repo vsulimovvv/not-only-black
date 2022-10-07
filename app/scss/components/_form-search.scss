@@ -1,0 +1,63 @@
+.form-search {
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 0 0 #b5b5b5 inset;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  max-width: 1240px;
+  width: calc(100% - 30px);
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 9;
+  background-color: var(--color-white);
+  opacity: 0;
+  visibility: hidden;
+  transition: 400ms ease;
+
+  @include breakpointsMaxW($bp-991) {
+    top: 80px;
+  }
+
+  @include breakpointsMaxW($bp-576) {
+    top: 75px;
+  }
+
+  &.active {
+    transform: translateX(-50%) translateY(20px);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__input {
+    padding: 10px;
+    width: 100%;
+
+    &:focus {
+      outline: transparent;
+    }
+  }
+
+  &__btn,
+  &__close {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      fill: var(--color-dark);
+    }
+  }
+
+  &__btn {
+    margin-right: 5px;
+  }
+}

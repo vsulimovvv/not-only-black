@@ -31,6 +31,10 @@
     font-weight: 300;
     @include adaptive-value('margin-bottom', 47, 30, 1);
     @include adaptive-value('font-size', 26, 22, 1);
+
+    @include breakpointsMaxW($bp-576) {
+      text-align: center;
+    }
   }
 
   &__list {
@@ -106,8 +110,5 @@
     &:not(:last-child) {
       margin-right: 20px;
     }
-  }
-
-  &__form {
   }
 }

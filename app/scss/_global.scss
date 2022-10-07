@@ -70,17 +70,9 @@ body {
 }
 
 .logo {
-  width: 120px;
-  height: 60px;
-  display: block;
-  transition: 200ms ease;
-
+    display: block;
   @include adaptive-value('width', 120, 80, 1);
   @include adaptive-value('height', 60, 40, 1);
-
-  &:hover {
-    opacity: 0.7;
-  }
 
   img {
     @include img(contain);

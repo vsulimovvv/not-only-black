@@ -23,6 +23,7 @@
 
     .menu {
       border-bottom: none;
+
       &__link {
         padding-bottom: 10px;
       }
@@ -31,6 +32,10 @@
     .header__tools {
       padding-bottom: 10px;
       border-bottom: none;
+    }
+
+    .form-search{
+      top:80px;
     }
   }
 

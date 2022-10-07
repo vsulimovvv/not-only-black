@@ -22,6 +22,21 @@ window.addEventListener('DOMContentLoaded', () => {
   // * Nice Select
   $('select').niceSelect();
 
+  // * ==== showSearch
+  (function showSearch() {
+    const btn = document.querySelector('.btn-search');
+    const formSearch = document.querySelector('.form-search');
+    const btnClose = document.querySelector('.form-search__close');
+
+    btn.addEventListener('click', (e) => {
+      formSearch.classList.toggle('active');
+    });
+    btnClose.addEventListener('click', (e) => {
+      formSearch.classList.remove('active');
+    });
+  })();
+
+  // * ===== showDropmenu
   (function showDropmenu() {
     const dropdowns = document.querySelectorAll('.dropmenu');
     const menuLinks = document.querySelectorAll('.menu-header__link');

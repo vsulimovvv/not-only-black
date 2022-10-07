@@ -61,6 +61,13 @@
     grid-template-columns: 275px auto;
     gap: 100px;
 
+    &:last-child {
+      @include breakpointsMaxW($bp-576) {
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
     @include breakpointsMaxW($bp-991) {
       gap: 30px;
     }

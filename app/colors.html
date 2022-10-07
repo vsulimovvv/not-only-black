@@ -321,11 +321,11 @@
       <div class="header__tools header-tools">
         <ul class="header-tools__list">
           <li class="header-tools__item">
-            <a class="header-tools__link" href="#">
+            <button class="header-tools__link btn-search" type="button">
               <svg>
                 <use xlink:href="images/sprite.svg#search"></use>
               </svg>
-            </a>
+            </button>
           </li>
           <li class="header-tools__item">
             <a class="header-tools__link" href="#">
@@ -407,6 +407,45 @@
       </div>
     </div>
   </div>
+
+  <form class="form-search">
+    <input
+      class="form-search__input"
+      name="search"
+      type="text"
+      placeholder="Поиск"
+    />
+    <button class="form-search__btn" type="submit">
+      <svg>
+        <use xlink:href="images/sprite.svg#search"></use>
+      </svg>
+    </button>
+
+    <button class="form-search__close" type="button">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 6L18 18"
+          stroke="#0F0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M18 6L6 18"
+          stroke="#0F0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </form>
 </header>
 
 
