@@ -546,3 +546,11 @@ body {
     opacity: 1;
   }
 }
+
+.hero {
+  &__slider {
+    @include breakpointsMaxW(1920px) {
+      height: calc(150px + (400 - 150) * ((100vw - 360px) / (1270 - 360)));
+    }
+  }
+}

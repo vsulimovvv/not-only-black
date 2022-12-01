@@ -860,6 +860,12 @@ body.no-scroll {
     opacity: 1;
   }
 }
+@media (max-width: 1920px) {
+  .hero__slider {
+    height: calc(150px + 250 * (100vw - 360px) / 910);
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
